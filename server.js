@@ -22,18 +22,20 @@ app.use(router);
 io.on("connection", (socket)=>{
 
     // new user joined
-    socket.on("new_user_joined", (userName)=>{
-        users[socket.id] = userName;
-        socket.broadcast.emit("user_joined", userName);
+    socket.on("new_user_joined", (user)=>{
+        users[socket.id] = user;
+        socket.broadcast.emit("user_joined", user.name);
     });
 
     // message sent
     socket.on("send", (msg)=>{
         const date = new Date();
         const dnt = date.getDate() + '/' + (date.getMonth()+1) + '/' + date.getFullYear() + '@' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
-        socket.emit("recieve", {
+        socket.broadcast.emit("recieve", {
+            class: "msg",
             message: msg,
-            name: users[socket.id],
+            user: users[socket.id].name,
+            email: users[socket.id].email,
             timestamp: dnt
         });
     });
