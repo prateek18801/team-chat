@@ -2,13 +2,14 @@ const express = require("express");
 const http = require("http");
 const router = require("./router");
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 const server = http.createServer(app);
 
 const io = require("socket.io")(server, {
     cors: {
-        origin: process.env.CLIENT_ROUTE,
+        origin: "https://teamchat-server.herokuapp.com/",
         methods: ["GET", "POST"]
     }
 });
@@ -17,6 +18,7 @@ const PORT = process.env.PORT;
 
 let users = [];
 
+app.use(express.static(path.resolve(__dirname, './build')));
 app.use(cors());
 app.use(router);
 
