@@ -1,21 +1,23 @@
 const express = require("express");
 const http = require("http");
 const router = require("./router");
+const cors = require('cors');
 
 const app = express();
 const server = http.createServer(app);
 
 const io = require("socket.io")(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: process.env.CLIENT_ROUTE,
         methods: ["GET", "POST"]
     }
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 let users = [];
 
+app.use(cors());
 app.use(router);
 
 // socket.io handling

@@ -6,7 +6,7 @@ router.get('/', (req,res)=>{
 });
 
 router.get('/admin', (req,res)=>{
-    res.redirect("https://google.com");
+    res.send("admin page for team-chat application");
 });
 
 module.exports = router;
