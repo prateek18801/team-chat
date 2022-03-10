@@ -9,12 +9,12 @@ const server = http.createServer(app);
 
 const io = require("socket.io")(server, {
     cors: {
-        origin: "https://teamchat-server.herokuapp.com/",
+        origin: "*",
         methods: ["GET", "POST"]
     }
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 let users = [];
 

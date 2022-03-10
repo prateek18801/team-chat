@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6e11bbc2.chunk.css",
-    "main.js": "/static/js/main.fd16c1c6.chunk.js",
-    "main.js.map": "/static/js/main.fd16c1c6.chunk.js.map",
+    "main.js": "/static/js/main.ddb99514.chunk.js",
+    "main.js.map": "/static/js/main.ddb99514.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.71c5bbf3.js",
     "runtime-main.js.map": "/static/js/runtime-main.71c5bbf3.js.map",
     "static/js/2.58e1e2cb.chunk.js": "/static/js/2.58e1e2cb.chunk.js",
@@ -10,8 +10,7 @@
     "index.html": "/index.html",
     "static/css/main.6e11bbc2.chunk.css.map": "/static/css/main.6e11bbc2.chunk.css.map",
     "static/js/2.58e1e2cb.chunk.js.LICENSE.txt": "/static/js/2.58e1e2cb.chunk.js.LICENSE.txt",
-    "static/media/bdcoe.8b355dae.jfif": "/static/media/bdcoe.8b355dae.jfif",
-    "static/media/bdcoe.a4c33c9b.png": "/static/media/bdcoe.a4c33c9b.png",
+    "static/media/bdcoe.6dba93bb.png": "/static/media/bdcoe.6dba93bb.png",
     "static/media/Chatroom.css": "/static/media/chatbg.305ebaa7.svg",
     "static/media/google.ea717441.svg": "/static/media/google.ea717441.svg",
     "static/media/notification.1e61b3a0.mp3": "/static/media/notification.1e61b3a0.mp3",
@@ -21,6 +20,6 @@
     "static/js/runtime-main.71c5bbf3.js",
     "static/js/2.58e1e2cb.chunk.js",
     "static/css/main.6e11bbc2.chunk.css",
-    "static/js/main.fd16c1c6.chunk.js"
+    "static/js/main.ddb99514.chunk.js"
   ]
 }
